@@ -1,0 +1,54 @@
+.main-Container-Toast {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    width: 250px;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    z-index: 10;
+    background-color: white;
+    border-radius: 5px;
+    -webkit-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+    box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+    animation: fade 0.4s ease-out forwards;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+        transform: translateX(
+            50px
+        );
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.left-Toast {
+    display: flex;
+    flex-direction: column;
+}
+
+.toast-Inside {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #6366f1;
+}
+
+.right-Toast {
+    position: relative;
+}
+
+.text-when {
+    position: relative;
+}
+
+.text-when p {
+    color: rgb(176, 174, 174);
+}
